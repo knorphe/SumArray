@@ -1,0 +1,14 @@
+def  sumli(snums,tnum):
+    sarray = False
+    
+
+    for x in range(len(snums)-1):
+        inc = x + 1
+        while inc < len(snums):
+             if snums[x] + snums[inc] == tnum:
+                sarray = True
+                return sarray
+             else:
+                inc+=1
+    return sarray
+    
